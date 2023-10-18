@@ -6,8 +6,8 @@
 
 Hello db "Hello World$";
 Bye db "Bye World$";
-count1 db 10;
-count2 db 5;
+count1 dw 10;
+count2 dw 5;
 
 .code
 
@@ -18,8 +18,8 @@ count2 db 5;
         mov ds,ax;
         
             
-        mov cx, 10;  counter1 stored in cx
-        mov bx, 5;   counter2 stored in bx
+        mov cx, count1;  counter1 stored in cx
+        mov bx, count2;   counter2 stored in bx
             
         ;printing hello world
         print_hello:
