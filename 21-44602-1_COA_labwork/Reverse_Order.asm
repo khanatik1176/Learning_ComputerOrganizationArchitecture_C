@@ -8,9 +8,9 @@ LF EQU 0AH
 
 
 
-MSG1 DB 'ENTER A LOWER CASE LETTER : $' ; Taking message in string
+MSG1 DB 'ENTER Alphabets : $' ; Taking message in string
 
-MSG2 DB 0DH, 0AH, 'IN UPPER CASE IT IS: $' ; Taking message in string
+MSG2 DB 0DH, 0AH, 'Alphabet in reverse order : $' ; Taking message in string
 
 CHAR1 DB ? ; Variable to store the first character
 
@@ -86,10 +86,6 @@ MAIN PROC
   MOV AH, 2    ; Display character function
 
   INT 21H     ; Display the first uppercase letter
-
-
-
-
 
 
 
